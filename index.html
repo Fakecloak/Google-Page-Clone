@@ -236,6 +236,10 @@
             searchResult.classList.toggle('hidden')
         });
 
+        searchBar.addEventListener('blur', ()=> {
+            searchResult.classList.toggle('hidden')
+        });
+
         searchBar.addEventListener('keydown', (e)=> {
             if(e.key ==="Enter"){
                 let url = searchBar.value.trim();
